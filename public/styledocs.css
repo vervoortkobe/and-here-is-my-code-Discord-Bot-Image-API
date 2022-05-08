@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  background-color: #242424;
+}
+p {
+  font-size: 20;
+  color: #000000;
+}
+
+h2 {
+  
+  color: #ffffff;
+}
+
+div.card {
+  width: 1000vw;
+}
+
+.card-text {
+  padding-top: 0px;
+  height: 27%;
+  length: 100px;
+  color: #000000;
+  font-size: 100%;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0566DA;
+}
+
+head1 {
+  color: White;
+  font-size: 40px;
+}
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 0px;
+  text-decoration: none;
+}
+
+.Hover {
+  background-color: #0566DA;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  transition: .5s;
+}
+
+.Hover:hover {
+  background-color: #0d7afc;
+  color: white;
+  
+}
+
+ul.topnav li a.active {
+  background-color: #4CAF50;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+
+p{
+  color: #ffffff;
+}
+
+h1{
+   color: #ffffff;
+}
+
+div.title-main {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer.FooterCopyright {
+  background-color: #0566DA;
+}
+
+ul.topnav li.ClickImage {
+  float: right;
+  padding-top: 11px;
+  padding-right: 11px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 200px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+   background-color: #3b3b3b;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #EEEEEE;
+  display: block;
+  transition: 0.3s;
+}
+.subheading {
+  
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #FFFFFF;
+  display: block;
+  
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+  .main {
+    
+    margin-left: 200px;
+    
+  }
+.copyright {
+  
+  margin-left: 200px;
+  
+}
+
+
+
+.card {
+  width: 200%;
+  height: 308px;
+  margin-top: 25px;
+  padding-bottom: 25px;
+  background-color: #393939;
+  color: #000000;
+}
+
+.card:hover {
+  width: 250%;
+  transition: 2s;
+}
+
+.card-title {
+  margin-top: 5px;
+  height: 40px;
+  width: 100%;
+  font-size: 125%;
+  text-overflow: ellipsis;
+  color: #ffffff;
+
+  white-space: nowrap;
+  overflow: hidden;
+  
+  display: inline-block;
+  position: relative;
+}
+
+.card-text {
+  padding-top: 15px;
+  height: 27%;
+  length: 100px;
+  color: #ffffff;
+  font-size: 100%;
+}
+.btn-dark {
+  background-color: #0566DA;
+  width: 10zzz0%;
+  height: 18%;
+  line-height: 30px;
+  transition: 0.5s;
+}
+
+.btn-dark:hover,
+focus {
+  background-color: #0451ae;
+  border-color: #0451ae;
+  transition: 0.5s;
+}
+
+.btn-dark:active {
+  background-color: #03428d;
+  background: #03428d;
+  transition: 0.5s;
+  box-shadow: 0px 0px;
+}
+
+div.title-main {
+  font-weight: bold;
+  text-transform: uppercase;
+}
