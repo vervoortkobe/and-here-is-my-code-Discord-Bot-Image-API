@@ -1,0 +1,1019 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta property="og:title" content="And-Here-Is-My-Code &bullet; Home" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="And here is my code is a place where you can find a lot of random apis sites, even animal facts!" />
+<meta name="description" content="And here is my code  is a place where you can find a lot of apis from sites, even animal facts!" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="/teststyle.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://cdn.glitch.com/fa351f17-589e-4f75-9108-81b4ed51068d%2Fthumbnails%2Fc94a5786334b82adea01ec90337e729d.png?1568808136224">
+<title>And-Here-Is-My-Code &bull; Home</title>
+</head>
+<body>
+   
+  
+
+
+<ul class="topnav">
+  
+            
+
+  <li><div class="title-main"><a href="/" class="Hover"> and-here-is-my-code</a></div></li>
+  <li class="ClickImage">
+    <img src="https://i.vgy.me/CQrfco.png" target="_blank" onclick="openDiscord()" style="width:30px;height:30px;" title="Discord Server">
+  </li>
+  <li class="ClickImage">
+    <img src="https://i.vgy.me/BarQJ3.png" target="_blank" onclick="openTwitch()" style="width:30px;height:30px;" title="My Twitch">
+  </li>
+  <li class="ClickImage">
+    <img src="https://i.vgy.me/7s9zix.png" target="_blank" onclick="openTwitter()" style="width:30px;height:30px;" title="My Twitter">
+  </li>
+  <li class="ClickImage">
+    <img src="https://i.vgy.me/Pat6PY.png" target="_blank" onclick="openList()" style="width:30px;height:30px;" title="documentation">
+  </li>
+   <li class="ClickImage">
+    <img src="https://i.vgy.me/wfD4R1.png" target="_blank" onclick="openBot()" style="width:35px;height:30px;" title="Discord Bot">
+  </li>
+  
+  <script>
+    function openDiscord() {
+      window.open("https://discord.gg/Vam22jK");
+    }
+    
+    function openTwitch() {
+      window.open("https://www.twitch.tv/luaadapt");
+    }
+    
+    function openTwitter() {
+      window.open("https://twitter.com/andhereismycode");
+    }
+    
+    function openBot() {
+      window.open("https://discordapp.com/oauth2/authorize?client_id=577433493311848487&permissions=8&scope=bot");
+    }
+    
+    function openList() {
+      window.open("/docs");
+    }
+  </script>
+
+</ul>
+  <!--- /command -->
+
+<center>
+  <br>
+  <br>
+  
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+  
+ <!--- facts -->
+ 
+  <br>
+<div class="container">
+<section id="top" class="section docs-heading">
+<div class="row">
+<div class="col-md-12">
+<head1>
+  Animal Fact Api's
+  </head1>
+
+</div>
+</div>
+<hr>
+</section>
+<div class="row">
+  
+  <script>
+    function CopyToClipboard(link){
+      const el = document.createElement('textarea');
+      el.value = "https://and-here-is-my-code.glitch.me"+link;
+      el.setAttribute('readonly', '');
+      el.style.position = 'absolute';
+      el.style.left = '-9999px';
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+    }
+  </script>
+  
+  <script>
+    function httpGet(theUrl, objectToChange)
+    {
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+      xmlHttp.send( null );
+      var Parsed = JSON.parse(xmlHttp.responseText);
+      console.log(Parsed.Link);
+      
+      var obj = document.getElementById(objectToChange);
+      obj.src = Parsed.Link
+    }
+  </script>
+
+  
+   <!-- lizard fact -->
+<div class="col-lg-3 d-flex justify-content-center" onload="httpGet('https://and-here-is-my-code.glitch.me/fact/lizards', 'ChangeTest')">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Lizard Fact </h2>
+  
+  
+  <p class="card-text">An endpoint that sends a random lizard fact to a user for whatever purpose.</p>
+  <br>
+  <button class="btn btn-dark" onclick="CopyToClipboard('/facts/lizards')">Copy Endpoint</button>
+
+  </div>
+</div>
+</div>
+  
+   <!-- raccoon fact -->
+<div class="col-lg-3 d-flex justify-content-center" onload="httpGet('https://and-here-is-my-code.glitch.me/fact/raccoon', 'ChangeTest')">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Raccoon Fact </h2>
+<p class="card-text">An endpoint that sends a random raccoon fact to a user for whatever purpose.</p>
+<br>
+<button class="btn btn-dark" onclick="CopyToClipboard('/facts/raccoon')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+       <!-- goose fact -->
+<div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Goose Fact </h2>
+<p class="card-text">An endpoint that sends a random goose fact to a user for whatever purpose.</p><br>
+<button class="btn btn-dark" onclick="CopyToClipboard('/facts/goose')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+     <!-- sheep fact -->
+<div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <h2 class="card-title">Sheep Fact </h2>
+  <p class="card-text">An endpoint that sends a random sheep fact to a user for whatever purpose.</p><br>
+  <button class="btn btn-dark" onclick="CopyToClipboard('/facts/sheep')">Copy Endpoint</button>
+  </div>
+</div>
+</div>
+  
+     <!-- dingo fact -->
+<div class="col-lg-3 d-flex justify-content-center" onload="httpGet('https://and-here-is-my-code.glitch.me/fact/dingo', 'ChangeTest')">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Dingo Fact </h2>
+  
+  
+  <p class="card-text">An endpoint that sends a random dingo fact to a user for whatever purpose.</p>
+  <br>
+  <button class="btn btn-dark" onclick="CopyToClipboard('/facts/dingo')">Copy Endpoint</button>
+
+  </div>
+</div>
+</div>
+  
+  
+    <!-- camel fact -->
+  <div class="col-lg-3 d-flex justify-content-center" onload="httpGet('https://and-here-is-my-code.glitch.me/fact/camel', 'ChangeTest')">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Camel Fact </h2>
+  
+  
+  <p class="card-text">An endpoint that sends a random camel fact to a user for whatever purpose.</p>
+  <br>
+  <button class="btn btn-dark" onclick="CopyToClipboard('/facts/camel')">Copy Endpoint</button>
+
+  </div>
+</div>
+</div>
+  
+      <!-- crab fact -->
+<div class="col-lg-3 d-flex justify-content-center" onload="httpGet('https://and-here-is-my-code.glitch.me/fact/crab', 'ChangeTest')">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Crab Fact </h2>
+  
+  
+  <p class="card-text">An endpoint that sends a random crab fact to a user for whatever purpose.</p>
+  <br>
+  <button class="btn btn-dark" onclick="CopyToClipboard('/facts/crab')">Copy Endpoint</button>
+
+  </div>
+</div>
+</div>
+  
+  
+    <!-- cow fact -->
+  <div class="col-lg-3 d-flex justify-content-center" onload="httpGet('https://and-here-is-my-code.glitch.me/fact/cow', 'ChangeTest')">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Cow Fact </h2>
+  
+  
+  <p class="card-text">An endpoint that sends a random cow fact to a user for whatever purpose.</p>
+  <br>
+  <button class="btn btn-dark" onclick="CopyToClipboard('/facts/cow')">Copy Endpoint</button>
+
+  </div>
+</div>
+</div>  
+    <!-- hippo fact -->
+<div class="col-lg-3 d-flex justify-content-center" onload="httpGet('https://and-here-is-my-code.glitch.me/fact/hippo', 'ChangeTest')">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Hippo Fact </h2>
+  
+  
+  <p class="card-text">An endpoint that sends a random hippo fact to a user for whatever purpose.</p>
+  <br>
+  <button class="btn btn-dark" onclick="CopyToClipboard('/facts/hippo')">Copy Endpoint</button>
+
+  </div>
+</div>
+</div>
+  
+   <!-- fish fact -->
+<div class="col-lg-3 d-flex justify-content-center" onload="httpGet('https://and-here-is-my-code.glitch.me/fact/fish', 'ChangeTest')">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Fish Fact </h2>
+  
+  
+  <p class="card-text">An endpoint that sends a random fish fact to a user for whatever purpose.</p>
+  <br>
+  <button class="btn btn-dark" onclick="CopyToClipboard('/facts/lizards')">Copy Endpoint</button>
+
+  </div>
+</div>
+</div>  
+     <!-- chicken fact -->
+<div class="col-lg-3 d-flex justify-content-center" onload="httpGet('https://and-here-is-my-code.glitch.me/fact/chicken', 'ChangeTest')">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Chicken Fact </h2>
+  
+  
+  <p class="card-text">An endpoint that sends a random chicken fact to a user for whatever purpose.</p>
+  <br>
+  <button class="btn btn-dark" onclick="CopyToClipboard('/facts/chicken')">Copy Endpoint</button>
+
+  </div>
+</div>
+</div>
+  
+     <!-- shark fact -->
+<div class="col-lg-3 d-flex justify-content-center" onload="httpGet('https://and-here-is-my-code.glitch.me/fact/shark', 'ChangeTest')">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Shark Fact </h2>
+  
+  
+  <p class="card-text">An endpoint that sends a random shark fact to a user for whatever purpose.</p>
+  <br>
+  <button class="btn btn-dark" onclick="CopyToClipboard('/facts/shark')">Copy Endpoint</button>
+
+  </div>
+</div>
+</div>
+  
+       <!-- lion fact -->
+<div class="col-lg-3 d-flex justify-content-center" onload="httpGet('https://and-here-is-my-code.glitch.me/facts/lion', 'ChangeTest')">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Lion Fact </h2>
+  
+  
+  <p class="card-text">An endpoint that sends a random lion fact to a user for whatever purpose.</p>
+  <br>
+  <button class="btn btn-dark" onclick="CopyToClipboard('/facts/lion')">Copy Endpoint</button>
+
+  </div>
+</div>
+</div>
+  
+       <!-- whale fact -->
+<div class="col-lg-3 d-flex justify-content-center" onload="httpGet('https://and-here-is-my-code.glitch.me/fact/whale', 'ChangeTest')">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Whale Fact </h2>
+  
+  
+  <p class="card-text">An endpoint that sends a random shark fact to a user for whatever purpose.</p>
+  <br>
+  <button class="btn btn-dark" onclick="CopyToClipboard('/facts/shark')">Copy Endpoint</button>
+
+  </div>
+</div>
+</div>
+  
+     <!-- snake fact -->
+<div class="col-lg-3 d-flex justify-content-center" onload="httpGet('https://and-here-is-my-code.glitch.me/fact/snake', 'ChangeTest')">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Snake Fact </h2>
+  
+  
+  <p class="card-text">An endpoint that sends a random snake fact to a user for whatever purpose.</p>
+  <br>
+  <button class="btn btn-dark" onclick="CopyToClipboard('/facts/snake')">Copy Endpoint</button>
+
+  </div>
+</div>
+</div>
+  
+
+   <!-- cat fact -->
+<div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Cat Fact </h2>
+<p class="card-text">An endpoint that sends a random cat fact to a user for whatever purpose.</p><br>
+<button class="btn btn-dark" onclick="CopyToClipboard('/facts/cat')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+  
+  
+ <!-- dog fact -->
+<div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Dog Fact </h2>
+<p class="card-text">An endpoint that sends a random dog fact to a user for whatever purpose.</p><br>
+<button class="btn btn-dark" onclick="CopyToClipboard('/facts/dog')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+   <!-- bear fact -->
+<div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Bear Fact </h2>
+<p class="card-text">An endpoint that sends a random bear fact to a user for whatever purpose.</p><br>
+<button class="btn btn-dark" onclick="CopyToClipboard('/facts/bear')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+  <!-- killerwhale fact -->
+<div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Killer Whale Fact </h2>
+<p class="card-text">An endpoint that sends a random killer whale fact to a user for whatever purpose.</p><br>
+<button class="btn btn-dark" onclick="CopyToClipboard('/facts/killerwhale')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+   <!-- giraffe fact -->
+<div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Giraffe Fact </h2>
+<p class="card-text">An endpoint that sends a random giraffe fact to a user for whatever purpose.</p><br>
+<button class="btn btn-dark" onclick="CopyToClipboard('/facts/giraffe')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+  
+    <!-- dolphin fact -->
+<div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Dolphin Fact </h2>
+<p class="card-text">An endpoint that sends a random dolphin fact to a user for whatever purpose.</p><br>
+<button class="btn btn-dark" onclick="CopyToClipboard('/facts/dolphin')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+  
+  <!--- images -->
+  
+<br>
+<div class="container">
+  <br>
+<section id="top2" class="section docs-heading">
+<div class="row">
+<div class="col-md-12">
+<head1>
+  Animal Image Api's
+  </head1>
+
+</div>
+</div>
+<hr>
+</section>
+<div class="row">
+  
+      <!--  sheep image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Sheep Image </h2>
+    <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/sheep', 'SheepImage')" class="Img_2">
+  <div class="ImagePos">
+    <img src="https://images.unsplash.com/photo-1484557985045-edf25e08da73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="Img_1" id="SheepImage">
+  </div>
+  <p class="card-text">An endpoint that sends a random sheep image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/sheep')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+
+  
+          <!-- crab image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">crab   Image </h2>
+    <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/crab', 'CrabImage')" class="Img_2">
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/SPLKwVK.jpg" class="Img_1" id="CrabImage">
+  </div>
+  <p class="card-text">An endpoint that sends a random crab image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/crab')">Copy Endpoint</button>
+</div>
+</div>
+</div> 
+ 
+    <!-- shark image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Shark Image </h2>
+    <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/shark', 'SharkImage')" class="Img_2">
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/Krpaylg.jpg" class="Img_1" id="SharkImage">
+  </div>
+  <p class="card-text">An endpoint that sends a random shark image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/shark')">Copy Endpoint
+</button>
+</div>
+</div>
+</div>
+  
+  
+         <!-- chicken image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Chicken Image </h2>
+    <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/chicken', 'ChickenImage')" class="Img_2">
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/Xdjf84O.jpg" class="Img_1" id="ChickenImage">
+  </div>
+  <p class="card-text">An endpoint that sends a random chicken image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/chicken')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+    <!--  hippo image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Hippo Image </h2>
+    <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/hippo', 'HippoImage')" class="Img_2">
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/gVQm2eA.jpg" class="Img_1" id="HippoImage">
+  </div>
+  <p class="card-text">An endpoint that sends a random hippo image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/hippo')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+
+      <!-- rhino image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Rhino Image </h2>
+    <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/rino', 'RhinoImage')" class="Img_2">
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/aRRzbcj.jpg" class="Img_1" id="RhinoImage">
+  </div>
+  <p class="card-text">An endpoint that sends a random rhino image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/rhino')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+    
+  <!-- lion image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/lion', 'LionImage')" class="Img_2">
+<h2 class="card-title">Lion Image </h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/HEiz5pT.jpg" class="Img_1" id="LionImage">
+  </div>
+<p class="card-text">An endpoint that sends a random lion image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/lion')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+    <!-- dingo image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/dingo', 'DingoImage')" class="Img_2">
+<h2 class="card-title">Dingo Image </h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/EMUQ2s9.jpg" class="Img_1" id="DingoImage">
+  </div>
+<p class="card-text">An endpoint that sends a random dingo image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/dingo')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+      <!-- penguin image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Penguin Image </h2>
+    <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/penguin', 'PenguinImage')" class="Img_2">
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/LLfpOpq.jpg" class="Img_1" id="PenguinImage">
+  </div>
+  <p class="card-text">An endpoint that sends a random rhino image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/penguin')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+    <!-- dolphin image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/dolphin', 'DolphinImage')" class="Img_2">
+<h2 class="card-title">Dolphin Image </h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/KWMP5oi.jpg" class="Img_1" id="DolphinImage">
+  </div>
+<p class="card-text">An endpoint that sends a random dolphin image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/dolphin')">Copy Endpoint</button>
+</div>
+</div>
+</div> 
+  
+
+    <!-- camel image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/camel', 'CamelImage')" class="Img_2">
+<h2 class="card-title">Camel Image </h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/hg76RMb.jpg" class="Img_1" id="CamelImage">
+  </div>
+<p class="card-text">An endpoint that sends a random camel image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/camel')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+
+    
+  <!-- bear image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/bear', 'BearImage')" class="Img_2">
+<h2 class="card-title">Bear Image </h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/qe3sHSn.jpg" class="Img_1" id="BearImage">
+  </div>
+<p class="card-text">An endpoint that sends a random bear image.</p>
+ 
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/bear')">Copy Endpoint</button>
+</div>
+</div>
+</div> 
+  
+  
+  <!-- horse image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/horse', 'HorseImage')" class="Img_2">
+<h2 class="card-title">Horse Image </h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/N4kL7kz.jpg" class="Img_1" id="HorseImage">
+  </div>
+<p class="card-text">An endpoint that sends a random horse image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/horse')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+  
+    <!-- duck image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/duck', 'DuckImage')" class="Img_2">
+<h2 class="card-title">Duck Image </h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/YpNCzr8.jpg" class="Img_1" id="DuckImage">
+  </div>
+<p class="card-text">An endpoint that sends a random horse image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/duck')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+  
+   <!-- pig image -->
+<div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/pig', 'PigImage')" class="Img_2">
+<h2 class="card-title">Pig Image </h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/Mm6w0Ex.jpg" class="Img_1" id="PigImage">
+  </div>
+<p class="card-text">An endpoint that sends a random pig image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/pig')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+  <!-- cow image -->
+<div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/cow', 'CowImage')" class="Img_2">
+<h2 class="card-title">Cow Image </h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/44YlDxM.jpg" class="Img_1" id="CowImage">
+  </div>
+<p class="card-text">An endpoint that sends a random cow image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/cow')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+ <!-- snake image -->
+<div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/snakes', 'SnakeImage')" class="Img_2">
+<h2 class="card-title">Snake Image </h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/AZBYzzz.jpg" class="Img_1" id="SnakeImage">
+  </div>
+<p class="card-text">An endpoint that sends a random snake image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/snakes')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+
+   <!-- killer whale image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/killerwhale', 'KillerwhaleImage')" class="Img_2">
+<h2 class="card-title">Killer Whale image </h2>
+      <img src="https://allthatsinteresting.com/thumb/800.422.https://allthatsinteresting.com/wordpress/wp-content/uploads/2017/06/killer-whale-gangs-og.jpg" class="Img_1" id="KillerwhaleImage">
+<p class="card-text">An endpoint that sends a random Killerwhale Image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/killerwhale')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+
+  
+  
+   <!-- giraffe image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/giraffe', 'GiraffeImage')" class="Img_2">
+<h2 class="card-title">Giraffe Image</h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/da20LRi.jpg" class="Img_1" id="GiraffeImage">
+  </div>
+<p class="card-text">An endpoint that sends a random giraffe image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/giraffe')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+  
+     <!-- elephant image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/elephant', 'ElephantImage')" class="Img_2">
+<h2 class="card-title">Elephant Image</h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/h8JSPDC.jpg" class="Img_1" id="ElephantImage">
+  </div>
+  
+<p class="card-text">An endpoint that sends a random elephant image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/elephant')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+  
+
+  
+       <!-- turtle image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/turtle', 'TurtleImage')" class="Img_2">
+<h2 class="card-title">Turtle Image</h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/DrIDSET.jpg" class="Img_1" id="TurtleImage">
+  </div>
+  
+<p class="card-text">An endpoint that sends a random turtle image.</p>
+<a href="/img/turtle" class="btn btn-dark">View Endpoint</a>
+</div>
+</div>
+</div>
+  
+       <!-- lizard image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/lizards', 'ChangeTest')" class="Img_2">
+<h2 class="card-title">Lizard Image</h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/3nTp9trb.jpg" class="Img_1" id="ChangeTest">
+  </div>
+  
+<p class="card-text">An endpoint that sends a random lizard image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/lizards')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+       <!-- dog image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/dog', 'DogImage')" class="Img_2">
+<h2 class="card-title">Dog Image</h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/xi5V59S.jpg" class="Img_1" id="DogImage">
+  </div>
+<p class="card-text">An endpoint that sends a random dog image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/dog')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+
+         <!-- cat image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/cat', 'CatImage')" class="Img_2">
+<h2 class="card-title">Cat Image</h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/3o1eVp6.jpg" class="Img_1" id="CatImage">
+  </div>
+<p class="card-text">An endpoint that sends a random cat image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/cat')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+       <!-- panda image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/panda', 'PandaImage')" class="Img_2">
+<h2 class="card-title">Panda Image</h2>
+ <div class="ImagePos">
+    <img src="https://i.imgur.com/tcrWY7k.jpg" class="Img_1" id="PandaImage">
+  </div>
+<p class="card-text">An endpoint that sends a random panda image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/panda')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+       <!-- spider image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/spiders', 'SpiderImage')" class="Img_2">
+  <h2 class="card-title">Spider Image</h2>
+<div class="ImagePos">
+    <img src="https://i.imgur.com/umWykTO.jpg" class="Img_1" id="SpiderImage">
+  </div>
+<p class="card-text">An endpoint that sends a random spider image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/spirders')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  <br>
+    <br>
+  <br>
+  <br>
+  <br>
+<br>
+<br>
+  
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+  
+<div class="container">
+  <br>
+<section id="top3" class="section docs-heading">
+<div class="row">
+<div class="col-md-12">
+<head1>
+  Other Api's
+  </head1>
+
+</div>
+</div>
+<hr>
+</section>
+<div class="row">
+  
+  
+  
+    <!-- joke image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Joke</h2><br><br><br>
+<p class="card-text">An endpoint that sends a random joke.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/joke')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+     <!-- quotes-->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<h2 class="card-title">Quotes</h2><br><br><br>
+<p class="card-text">An endpoint that sends a random quote.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/quotes')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+  
+         <!-- eevee image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/eevee', 'EeveeImage')" class="Img_2">   
+<h2 class="card-title">Eevee Image</h2>
+ <div class="ImagePos">
+    <img src="https://i.imgur.com/vntsSDr.jpg" class="Img_1" id="EeveeImage">
+  </div>
+<p class="card-text">An endpoint that sends a random eevee image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/eevee')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+    <!-- meme -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+ <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/meme', 'MemeImage')" class="Img_2"> 
+<h2 class="card-title">Meme</h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/DOW9vCa.jpg" class="Img_1" id="MemeImage">
+  </div>
+<p class="card-text">An endpoint that sends a random meme.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/meme')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+
+    <!--rocket image-->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/rocket', 'RocketImage')" class="Img_2">
+<h2 class="card-title">Rocket Image </h2>
+ <div class="ImagePos">
+    <img src="https://i.imgur.com/aMAc8vc.jpg" class="Img_1" id="RocketImage">
+  </div> 
+<p class="card-text">An endpoint that sends a random rocket image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/rocket')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+  
+  
+      <!-- cion flip image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/coinflip', 'CoinflipImage')" class="Img_2">
+<h2 class="card-title">Heads or Tails</h2>
+  <div class="ImagePos">
+    <img src="https://i.vgy.me/oSgRhL.png" class="Img_1" id="CoinflipImage">
+  </div>
+<p class="card-text">An endpoint that sends a random heads or tails image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/coinflip')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+      <!-- car image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/cars', 'CarImage')" class="Img_2">
+<h2 class="card-title">Car Image</h2>
+<div class="ImagePos">
+    <img src="https://i.imgur.com/U3vkRyo.jpg" class="Img_1" id="CarImage">
+  </div>
+<p class="card-text">An endpoint that sends a random car image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/cars')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+  
+        <!-- trump image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+<img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/Trump', 'TrumpImage')" class="Img_2">
+<h2 class="card-title">Trump Image </h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/6UkQUDj.jpg" class="Img_1" id="TrumpImage">
+  </div>
+<p class="card-text">An endpoint that sends a random trump image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/trump')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+  
+       <!-- food image -->
+  <div class="col-lg-3 d-flex justify-content-center">
+<div class="card">
+<div class="card-body">
+  <img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/food', 'FoodImage')" class="Img_2">
+<h2 class="card-title">Food Image</h2>
+  <div class="ImagePos">
+    <img src="https://i.imgur.com/3B6VwMYb.jpg" class="Img_1" id="FoodImage">
+  </div>
+<p class="card-text">An endpoint that sends a random food image.</p>
+<button class="btn btn-dark" onclick="CopyToClipboard('/img/food')">Copy Endpoint</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+  <br><br><br>
+  
+
+<br><br><br>
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+  
+<footer class="FooterCopyright">
+<a class="copyright" style="color: #ffffff;">© 2020 And-Here-Is-My-Code</a>
+
+  
+</footer>
+  </center>
+</body>
+
+</html>
