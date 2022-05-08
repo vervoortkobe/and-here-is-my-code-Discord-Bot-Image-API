@@ -1,0 +1,9 @@
+==== Put this before title
+<img src="https://i.vgy.me/x43VUp.png" style="width:20px;height:20px;" onclick="httpGet('https://and-here-is-my-code.glitch.me/img/turtle', 'TurtleImage')" class="Img_2">
+
+==== Put this after title
+<div class="ImagePos">
+    <img src="https://i.imgur.com/h8JSPDC.jpg" class="Img_1" id="CatImage">
+  </div>
+  
+  
